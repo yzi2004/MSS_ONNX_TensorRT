@@ -27,8 +27,6 @@ training:
   grad_clip: 0
   instruments:
   - vocals
-  - bass
-  - drums
   - other
   lr: 9.0e-05
   patience: 2
