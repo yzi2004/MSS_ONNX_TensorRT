@@ -1,3 +1,7 @@
+# !python MSS/export_to_onnx.py --model_type mdx23c --config_path MSS/configs/config_musdb18_mdx23c.yaml --checkpoint_path MDX23C-8KFFT-InstVoc_HQ.ckpt --output_path MDX23C_8KFFT.onnx --opset_version 17
+
+#!python MSS/export_to_onnx.py --model_type mdx23c --config_path MSS/configs/config_musdb18_mdx23c.yaml --checkpoint_path MDX23C_D1581.ckpt --output_path MDX23C_D1581.onnx --opset_version 17
+
 import torch
 import torch.nn as nn
 from typing import Dict, Any, Union
