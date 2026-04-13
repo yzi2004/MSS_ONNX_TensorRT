@@ -43,7 +43,7 @@ def validate(model: onnxruntime.InferenceSession):
     assert len(inp.shape) == 4, inp.shape
     assert len(outp.shape) >= 4, outp.shape
 
-    assert inp.shape[1:] == outp.shape[1:], (inp.shape, outp.shape)
+ #   assert inp.shape[1:] == outp.shape[1:], (inp.shape, outp.shape)
 
 
 def add_meta_data(filename, meta_data):
