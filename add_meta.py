@@ -41,7 +41,7 @@ def validate(model: onnxruntime.InferenceSession):
     outp = model.get_outputs()[0]
 
     assert len(inp.shape) == 4, inp.shape
-    assert len(outp.shape) == 4, outp.shape
+    assert len(outp.shape) >= 4, outp.shape
 
     assert inp.shape[1:] == outp.shape[1:], (inp.shape, outp.shape)
 
