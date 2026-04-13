@@ -160,6 +160,18 @@ class TFC_TDF_net(nn.Module):
 
         self.first_conv = nn.Conv2d(dim_c, c, 1, 1, 0, bias=False)
 
+        print("\n" + "="*30)
+        print("MODEL ARCHITECTURE DEBUG")
+        print(f"num_subbands: {self.num_subbands}")
+        print(f"audio.num_channels: {config.audio.num_channels}")
+        print(f"dim_c (Input Channels): {dim_c}")
+        print(f"c (Initial Channels): {c}")
+        print(f"g (Growth): {g}")
+        print(f"Target Output Channels for Block 0: {c + g}") 
+        print("="*30 + "\n")
+        # -----------------------
+        
+        
         self.encoder_blocks = nn.ModuleList()
         for i in range(n):
             block = nn.Module()
