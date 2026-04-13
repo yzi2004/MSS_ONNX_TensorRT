@@ -14,7 +14,7 @@ model:
   growth: 128
   norm: InstanceNorm
   num_blocks_per_scale: 2
-  num_channels: 128
+  num_channels: 96
   num_scales: 5
   num_subbands: 4
   scale:
